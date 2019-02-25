@@ -1,0 +1,21 @@
+h1, h2 {
+    margin: 0 auto 50px auto;
+    width: 400px;
+    font-family: 'OpenSans';
+}
+
+h2 {
+    display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-width: 400px;
+    height: 26px * 1.4 * 3; /* $font-size * $line-height * $lines-to-show; */
+    /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.4;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
